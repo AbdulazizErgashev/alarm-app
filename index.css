@@ -1,0 +1,108 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+}
+
+.alarm-container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.alarm-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.alarm-title {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #1f2937;
+  font-weight: bold;
+}
+
+.time-display {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #3b82f6;
+  margin-bottom: 25px;
+}
+
+.set-alarm {
+  margin: 25px 0;
+}
+
+#set-alarm-btn,
+#clear-alarm-btn {
+  padding: 12px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #3b82f6, #60a5fa);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+}
+
+#set-alarm-btn:hover,
+#clear-alarm-btn:hover {
+  background: linear-gradient(to right, #2563eb, #3b82f6);
+  box-shadow: 0 6px 12px rgba(59, 130, 246, 0.5);
+}
+
+#set-alarm-btn:active,
+#clear-alarm-btn:active {
+  transform: scale(0.98);
+}
+
+#alarm-time {
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#alarm-time:focus {
+  outline: none;
+  border: 1px solid #3b82f6;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.5);
+}
+
+#alarm-message {
+  margin-top: 25px;
+  font-size: 1.3rem;
+  color: #ef4444;
+  font-weight: bold;
+  animation: pulse 1.5s infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
