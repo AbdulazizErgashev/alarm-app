@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iPhone Alarm</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="alarm-container">
+      <h1 class="alarm-title">Alarm</h1>
+      <div class="time-display">
+        <span id="hours">00</span>
+        :
+        <span id="minutes">00</span>
+        :
+        <span id="seconds">00</span>
+        <span id="am-pm">A.M</span>
+      </div>
+
+      <div class="set-alarm">
+        <label for="alarm-time">Set Alarm:</label>
+        <input type="time" id="alarm-time" />
+        <button id="set-alarm-btn">Set Alarm</button>
+        <button id="clear-alarm-btn">Clear Alarm</button>
+      </div>
+
+      <div id="alarm-message" class="hidden">⏰ Wake up! It's time! ⏰</div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
